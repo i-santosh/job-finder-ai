@@ -1,6 +1,6 @@
-# Resume Category Classifier
+# Resume Based Job Finder
 
-This application uses machine learning to classify resumes into job categories.
+This application uses machine learning to classify resumes into job categories and list available jobs.
 
 ## Features
 
