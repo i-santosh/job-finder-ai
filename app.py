@@ -153,38 +153,6 @@ def main():
             Features extracted from the text include skills, experience, education, and specific keywords.
             """)
 
-# Helper function to get job titles based on category
-def get_job_titles_for_category(category):
-    job_titles_map = {
-        "Data Science": ["Data Scientist", "Machine Learning Engineer", "Data Analyst", "AI Researcher"],
-        "HR": ["HR Manager", "Talent Acquisition Specialist", "HR Business Partner", "Recruiter"],
-        "Advocate": ["Legal Counsel", "Corporate Lawyer", "Legal Advisor", "Attorney"],
-        "Arts": ["Graphic Designer", "Creative Director", "Content Creator", "Artist"],
-        "Web Designing": ["UI/UX Designer", "Frontend Developer", "Web Developer", "WordPress Developer"],
-        "Accounts": ["Accountant", "Financial Analyst", "Auditor", "Bookkeeper"],
-        "Sales": ["Sales Representative", "Business Development Manager", "Account Executive", "Sales Manager"],
-        "Health and fitness": ["Fitness Trainer", "Nutritionist", "Health Coach", "Wellness Coordinator"],
-        "Aviation": ["Pilot", "Flight Attendant", "Aviation Technician", "Air Traffic Controller"],
-        "Teaching": ["Teacher", "Professor", "Curriculum Developer", "Education Consultant"],
-        "Engineering": ["Software Engineer", "Mechanical Engineer", "Civil Engineer", "Electrical Engineer"],
-        "Automobile": ["Automotive Engineer", "Mechanical Designer", "Vehicle Technician", "Production Manager"],
-        "Business-Development": ["Business Development Manager", "Strategic Partnership Director", "Growth Specialist", "Market Expansion Lead"],
-        "Chef": ["Head Chef", "Sous Chef", "Pastry Chef", "Culinary Director"],
-        "Finance": ["Financial Analyst", "Investment Banker", "Portfolio Manager", "Financial Planner"],
-        "Healthcare": ["Physician", "Nurse", "Medical Technician", "Healthcare Administrator"],
-        "Construction": ["Project Manager", "Civil Engineer", "Construction Supervisor", "Architect"],
-        "Digital-Media": ["Social Media Manager", "Digital Marketing Specialist", "Content Strategist", "SEO Expert"],
-        "BPO": ["Call Center Representative", "Customer Service Agent", "Process Associate", "Team Leader"],
-        "Agriculture": ["Agronomist", "Farm Manager", "Agricultural Engineer", "Food Technologist"],
-        "Media": ["Journalist", "Content Producer", "Public Relations Specialist", "Communications Manager"],
-        "Consultant": ["Management Consultant", "Strategy Consultant", "IT Consultant", "HR Consultant"],
-        "Designer": ["Product Designer", "Interior Designer", "Fashion Designer", "Industrial Designer"],
-        "Public-Relations": ["PR Manager", "Communications Specialist", "Media Relations", "Brand Ambassador"],
-        "Banking": ["Bank Manager", "Loan Officer", "Investment Banker", "Financial Advisor"]
-    }
-    
-    return job_titles_map.get(category, ["No specific job titles available for this category"])
-
 # Helper function to get jobs for category
 def get_jobs_for_category(category):
     REMOTIVE_API_URL = "https://remotive.com/api/remote-jobs"
